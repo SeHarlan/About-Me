@@ -4,19 +4,53 @@
 
 body {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(180deg, grey, rgba(73, 0, 88, 0.945));
+    color: plum;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+header {
+    font-style: italic;
+    text-shadow: 2px 2px 3px rgba(73, 0, 88, 0.945);
+    margin: 10px;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2px;
+}
+
+.border {
+    padding: 5px;
     border: double gray;
+    width: 50%;
+    margin: auto;
 }
-
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 li {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: fit-content;
     margin: 5px auto;
+}
+
+#quiz-button {
+    margin-top: 25px;
+    border-radius: 5px;
+    border: double;
+    transition: 0.5s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#quiz-button:hover {
+    box-shadow: 4px 4px 4px black;
+    border: 4px solid plum;
+    cursor: pointer;
+}
+
+#results {
+    margin: 15px;
+    font-size: larger;
+    opacity: 0;
+    transition: 2s ease-out;
 }

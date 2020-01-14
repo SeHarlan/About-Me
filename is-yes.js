@@ -1,5 +1,5 @@
 export default function isYes(input) {
-    const myInput = input.toLowerCase()
+    const myInput = input.toLowerCase();
     
     if (myInput === 'yes' || myInput === 'y') {
         return true;
@@ -7,3 +7,6 @@ export default function isYes(input) {
         return false;
     }
 }
+
+
+
