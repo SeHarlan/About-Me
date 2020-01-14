@@ -1,13 +1,10 @@
-export default function isYes(input) {
+
+export default function isNo(input) {
     const myInput = input.toLowerCase();
-    
-    if (myInput === 'yes' || myInput === 'y') {
+
+    if (myInput === 'no' || myInput === 'n') {
         return true;
     } else {
         return false;
     }
-};
-
-
-
-
+}

@@ -1,4 +1,5 @@
 import isYes from '../is-yes.js';
+import isNo from '../is-no.js';
 
 const quizButton = document.getElementById('quiz-button');
 
@@ -19,7 +20,7 @@ quizButton.addEventListener('click', () => {
     const question3 = prompt('Does Scott like music?');
 
     if (isYes(question1) === true) count += 1;
-    if (isYes(question2) === false) count += 1;
+    if (isNo(question2) === true) count += 1;
     if (isYes(question3) === true) count += 1;
     
     let percentage = count / 3 * 100; 
