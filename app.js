@@ -1,5 +1,5 @@
-import isYes from '../is-yes.js';
-import isNo from '../is-no.js';
+import isYes from './is-yes.js';
+import isNo from './is-no.js';
 
 const quizButton = document.getElementById('quiz-button');
 
