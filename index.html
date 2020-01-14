@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Scott's About Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- kind works but kinda sucks -->
+    <!-- <img src="26197242.jpg" class="background"> -->
 
     <header>Hello, I'm Scott!</header>
 
-    <img src="the-piano-1-1458199-640x512.jpg">
+    <img src="the-piano-1-1458199-640x512.jpg" alt='a piano.' class="image">
     <div>
         <h2>About Me</h2>
         <p class="border">I like coding and music.</p>
@@ -36,14 +39,15 @@
         </ol>
     </div>
     <div>
-        <button type="button" label="Take the Quiz!" id="quiz-button">Take the Quiz!</button>
+        <!--took out label attribute as recommended by html validator -->
+        <button type="button" id="quiz-button">Take the Quiz!</button>
     </div>
     
     <div id="results">ooops, you're not supposed to see this.</div>
 
 
 
-
+    <!-- not sure if its important but validator says module isnt supported by most browsers -->
     <script type="module" src="app.js"></script>
 </body>
 

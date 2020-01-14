@@ -11,7 +11,8 @@ quizButton.addEventListener('click', () => {
         alert('Please enter a name.')
         return;
     }
-    const confirmation = confirm(`Do you really though, ${userName}?`);
+
+    const confirmation = confirm(`Do you really wanna take this quiz though, ${userName}?`);
     if (confirmation === false) return;
 
     let count = 0;
@@ -24,7 +25,7 @@ quizButton.addEventListener('click', () => {
     if (isYes(question3) === true) count += 1;
     
     let percentage = count / 3 * 100; 
-    let roundPercentage = Math.round(percentage)
+    let roundPercentage = Math.round(percentage);
 
     if (count === 0) {
         quizResults.textContent = `Sorry ${userName}, you didn't get any correct.`;
