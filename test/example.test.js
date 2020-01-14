@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
+import isYes from '../is-yes.js';
 
 const test = QUnit.test;
 
@@ -9,8 +10,16 @@ test('time to test a function', function(assert) {
 
     //Act 
     // Call the function you're testing and set the result to a const
+    const shouldBeTrue = isYes('yes');
 
+    const shouldBefalse = isYes('no');
+
+    const shouldAlsoBeTrue = isYes('Y');
+
+    assert.equal(shouldBeTrue, true);
+    assert.equal(shouldBefalse, false);
+    assert.equal(shouldAlsoBeTrue, true);
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(true, false);
+    //assert.equal(true, false);
 });
