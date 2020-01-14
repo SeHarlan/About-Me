@@ -30,15 +30,18 @@ quizButton.addEventListener('click', () => {
     if (count === 0) {
         quizResults.textContent = `Sorry ${userName}, you didn't get any correct.`;
         quizResults.style.color = 'red';
+        quizResults.style.border = 'double red';
 
     } else if (count === 1) {
         quizResults.textContent = `Good try ${userName}, but you only got one right. That is  ${roundPercentage}%.`;
         quizResults.style.color = 'yellow';
+        quizResults.style.border = 'double yellow';
 
     } else {
         
         quizResults.textContent = `Congrats ${userName}, you got ${count}/3 correct! That is ${roundPercentage}%!`;
         quizResults.style.color = 'green';
+        quizResults.style.border = 'double green';
 
     }
     quizResults.style.opacity = '1';
